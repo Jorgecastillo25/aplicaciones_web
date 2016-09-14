@@ -1,0 +1,11 @@
+var http= require('http');
+const puerto= 8080;
+function atenderUsuario(request,response){
+response.writeHead(200,{'Content-Type':'text/html'});
+response.write('mi servidor web<br>');
+response.end('Hola, Usuario' + request.url);
+}
+var server=http.createServer(atenderUsuario);
+server.listen(puerto, function(){
+console.log('ok');
+});

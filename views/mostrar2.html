@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Listado</title>
+    </head>
+    <body>
+        <h1>Listado</h1>
+        {% if arreglo is defined %}
+        <table border="1">
+            {% for elemento in arreglo %}
+            <tr>
+            <td>{{elemento}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+            NO HAY DATOS
+        {% endif %}
+    </body>
+</html>
