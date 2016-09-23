@@ -1,9 +1,15 @@
 #divSalida{
-    background-color:black;
-    color: white;
+    /*background-color:black;*/
+    color: blue;
     padding: 8px;
     position: absolute;
     top: 0px;
     right: 0px;
     border-radius: 8px;  
+}
+.normal{
+    background-color:black;
+}
+.error{
+ background-color:red;
 }
